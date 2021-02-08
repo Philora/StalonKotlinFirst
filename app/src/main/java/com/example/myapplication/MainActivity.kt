@@ -14,15 +14,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val add = findViewById<Button>(R.id.add)
+        val clear = findViewById<Button>(R.id.clear)
+        val delete = findViewById<Button>(R.id.delete)
+        val editText = findViewById<EditText>(R.id.edt_Input)
+        listView = findViewById<ListView>(R.id.listView)
         // Initializing the array lists and the adapter
         var itemlist = arrayListOf<String>()
-        var add = Button(this)
-        var editText = EditText(this)
-        var clear = Button(this)
-        var delete = Button(this)
-        var adapter =ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_multiple_choice
-                , itemlist)
+
+        var adapter =ArrayAdapter<String>(this, android.R.layout.simple_list_item_multiple_choice, itemlist)
         // Adding the items to the list when the add button is pressed
         add.setOnClickListener {
 
