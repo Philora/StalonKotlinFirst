@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
-    style="?android:attr/progressBarStyleLarge"
-    android:layout_width="@dimen/_45dp"
-    android:layout_gravity="center"
-    android:layout_height="@dimen/_45dp" />
