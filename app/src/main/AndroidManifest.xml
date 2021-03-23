@@ -3,6 +3,7 @@
     package="com.stalon.app">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,14 +11,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".navigation.DashboardMain"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".kt_room_sample.view.LoadDataActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeData"/>
+
+        <activity android:name=".kt_room_sample.view.AddTaskActivity" />
+
+        <activity android:name=".kt_room_sample.view.UpdateTaskActivity" />
     </application>
 
 </manifest>
